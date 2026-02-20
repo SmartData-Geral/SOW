@@ -99,11 +99,12 @@ button {
 }
 
 .section-label {
-  font-size: 25px;
-  font-weight: 500;
-  line-height: 27.75px;
+  font-size: 32px;
+  font-weight: 700;
+  line-height: 1.2;
   color: var(--white);
   margin-bottom: 40px;
+  text-align: center;
 }
 
 /* ========================================================
@@ -157,7 +158,6 @@ button {
   padding: 18px 0;
   position: relative;
   z-index: 1;
-  border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
 
 .ticker {
@@ -166,6 +166,7 @@ button {
   gap: 52px;
   width: max-content;
   animation: ticker-scroll 28s linear infinite;
+  will-change: transform;
 }
 
 @keyframes ticker-scroll {
@@ -280,7 +281,7 @@ button {
 .hero__seta {
   height: 64px;
   width: auto;
-  transform: rotate(-45deg);
+  transform: rotate(-90deg);
   display: inline-block;
   flex-shrink: 0;
 }
@@ -357,6 +358,8 @@ button {
   line-height: 19.36px;
   color: var(--white);
   opacity: 0.7;
+  margin-top: 48px;
+  text-align: center;
 }
 
 /* pain cards — 2-row layout (3 top, 2 bottom centred) */
@@ -487,6 +490,7 @@ button {
   gap: 20px;
   width: max-content;
   animation: video-ticker-scroll 35s linear infinite;
+  will-change: transform;
 }
 
 .video-ticker__card {
@@ -497,7 +501,6 @@ button {
   object-fit: cover;
   display: block;
 }
-
 
 @keyframes video-ticker-scroll {
   0% {
@@ -577,7 +580,7 @@ button {
   position: absolute;
   top: -56px;
   right: 0;
-  width: 72px;
+  width: 84px;
   height: auto;
 }
 
@@ -588,6 +591,7 @@ button {
   color: var(--white);
   text-align: right;
   max-width: 340px;
+  margin-right: 60px;
 }
 
 .diff__character {
@@ -654,7 +658,8 @@ button {
   font-weight: 700;
   text-align: center;
   color: var(--white);
-  margin-bottom: 6px;
+  margin-bottom: 8px;
+  margin-top: 2px;
 }
 
 .service-section__sub {
@@ -758,8 +763,8 @@ button {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: 10px;
-  padding: 20px 12px;
+  gap: 24px;
+  padding: 56px 12px;
   border-right: 1px solid rgba(255, 255, 255, 0.08);
   text-align: center;
 }
@@ -775,7 +780,7 @@ button {
 }
 
 .sw-col__star {
-  font-size: 32px;
+  font-size: 64px;
   line-height: 1;
   color: var(--blue);
 }
@@ -799,7 +804,7 @@ button {
 
 .service-block__included {
   display: flex;
-  gap: 32px;
+  gap: 56px;
   padding: 32px;
   flex-wrap: wrap;
 }
@@ -1057,6 +1062,7 @@ button {
   font-weight: 300;
   line-height: 19.36px;
   text-align: right;
+  word-wrap: break-word;
 }
 
 .grupo-sd__companies {
@@ -1217,7 +1223,7 @@ button {
   border-radius: 8px;
   cursor: pointer;
   outline: 1px solid rgba(0, 0, 0, 0.10);
-  transition: opacity .2s, transform .15s;
+  transition: opacity .3s, transform .15s;
   min-width: 220px;
 }
 
@@ -1413,14 +1419,14 @@ button {
   position: absolute;
   width: 100px;
   height: auto;
-  opacity: 0.50;
+  opacity: 0.99;
   pointer-events: none;
   z-index: 0;
 }
 
 .tag-deco--errado {
   width: 90px;
-  opacity: 0.55;
+  opacity: 0.86;
 }
 
 /* The actual pill tag sits above the watermark */
@@ -1559,10 +1565,10 @@ button {
 /* circular logo badge — bottom-right of the form card */
 .contact__badge {
   position: absolute;
-  bottom: -28px;
-  right: -28px;
-  width: 88px;
-  height: 88px;
+  bottom: -45%;
+  right: -45%;
+  width: 90%;
+  height: 90%;
   object-fit: contain;
   z-index: 2;
 }
